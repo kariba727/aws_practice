@@ -17,5 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/gori/', function () {
+    return view('welcome');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
